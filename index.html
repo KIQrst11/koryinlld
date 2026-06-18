@@ -1,620 +1,185 @@
 <!DOCTYPE html>
-<html lang="uz">
+<!-- saved from url=(0029)https://t.me/razdevalkinuzbot -->
+<html lang="ru">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-
-<title>Korzіnka Market</title>
-
-<script>
-!function(f,b,e,v,n,t,s){
-if(f.fbq)return;
-n=f.fbq=function(){
-n.callMethod?
-n.callMethod.apply(n,arguments):
-n.queue.push(arguments)
-};
-
-if(!f._fbq)f._fbq=n;
-n.push=n;
-n.loaded=true;
-n.version='2.0';
-n.queue=[];
-
-t=b.createElement(e);
-t.async=true;
-t.src=v;
-
-s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s);
-
-}(window,document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-
-fbq('init','2491403044633394');
-fbq('track','PageView');
-
-function trackDownload(){
-fbq('track','Lead');
-}
-</script>
-
-<style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial,sans-serif;
-}
-
-body{
-background:#f5f7fa;
-color:#1f2937;
-line-height:1.6;
-}
-
-.container{
-width:90%;
-max-width:1200px;
-margin:auto;
-}
-
-header{
-background:white;
-padding:20px 0;
-border-bottom:1px solid #eee;
-}
-
-.nav{
-display:flex;
-justify-content:space-between;
-align-items:center;
-}
-
-.logo-wrap{
-display:flex;
-align-items:center;
-gap:12px;
-}
-
-.logo{
-width:50px;
-height:50px;
-border-radius:14px;
-object-fit:cover;
-}
-
-.hero{
-padding:70px 0;
-}
-
-.hero-grid{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:50px;
-align-items:center;
-}
-
-.hero h1{
-font-size:48px;
-margin-bottom:20px;
-}
-
-.hero p{
-color:#666;
-margin-bottom:30px;
-}
-  
-html{
-scroll-behavior:smooth;
-}
-
-.feature,
-.review,
-.section{
-
-opacity:0;
-transform:translateY(30px);
-transition:.8s;
-
-}
-
-.visible{
-
-opacity:1;
-transform:translateY(0);
-
-}
-
-#topBtn{
-
-position:fixed;
-right:25px;
-bottom:25px;
-
-width:55px;
-height:55px;
-
-border:none;
-border-radius:50%;
-
-font-size:22px;
-cursor:pointer;
-
-background:#2e7d32;
-color:white;
-
-display:none;
-
-box-shadow:
-0 10px 30px rgba(0,0,0,.2);
-
-}
-
-#topBtn.show{
-
-display:block;
-
-}
-
-.feature:hover{
-
-transform:translateY(-10px);
-
-}
-
-header{
-
-position:sticky;
-top:0;
-z-index:1000;
-
-backdrop-filter:blur(12px);
-
-background:
-rgba(255,255,255,.9);
-
-}
-  
-.download{
-display:inline-block;
-padding:16px 30px;
-background:#2e7d32;
-color:white;
-border-radius:14px;
-text-decoration:none;
-font-weight:bold;
-}
-
-.phone{
-width:100%;
-max-width:320px;
-display:block;
-margin:auto;
-border-radius:30px;
-box-shadow:0 20px 40px rgba(0,0,0,.15);
-}
-
-.features{
-padding:80px 0;
-background:white;
-}
-
-.grid{
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:20px;
-}
-
-.card{
-padding:25px;
-background:#f7f7f7;
-border-radius:18px;
-}
-
-.about{
-padding:80px 0;
-}
-
-.reviews{
-padding:80px 0;
-background:white;
-}
-
-.review{
-padding:20px;
-background:#f7f7f7;
-border-radius:16px;
-margin-top:15px;
-}
-
-.faq{
-padding:80px 0;
-}
-
-.item{
-background:white;
-padding:20px;
-margin-top:10px;
-border-radius:14px;
-cursor:pointer;
-}
-
-.answer{
-display:none;
-padding-top:10px;
-color:#666;
-}
-
-footer{
-padding:40px 0;
-background:#111827;
-color:white;
-text-align:center;
-}
-
-@media(max-width:900px){
-
-.hero-grid{
-grid-template-columns:1fr;
-text-align:center;
-}
-
-.grid{
-grid-template-columns:1fr;
-}
-
-}
-
-</style>
-
-<script>
-function faq(id){
-
-let x=document.getElementById(id);
-
-x.style.display=
-x.style.display==="block"
-?"none"
-:"block";
-
-}
-</script>
-
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Telegram: Launch @razdevalkinuzbot</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f5;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        min-height: 100vh;
+    }
+
+    /* Анимированный фон оригинального Телеграма */
+    .tgme_background_wrap {
+        position: fixed;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+        background: #e7ebd0 url('https://telegram.org/img/bg_tme.jpg') repeat;
+    }
+
+    /* Оригинальная шапка Telegram */
+    .tgme_head_wrap {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 48px;
+        background: #ffffff;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.07);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 10;
+        padding: 0 20px;
+    }
+    .tgme_head {
+        width: 100%;
+        max-width: 1000px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .tgme_logo {
+        height: 24px;
+        fill: #2481cc;
+    }
+    .tgme_head_right_btn {
+        background: #2481cc;
+        color: #fff;
+        text-decoration: none;
+        padding: 6px 14px;
+        border-radius: 6px;
+        font-size: 13px;
+        font-weight: bold;
+    }
+
+    /* Контейнер карточки */
+    .tgme_body_wrap {
+        padding-top: 100px;
+        padding-bottom: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: calc(100vh - 140px);
+    }
+
+    /* Оригинальная белая карточка Telegram */
+    .tgme_page {
+        background: #ffffff;
+        border-radius: 20px;
+        padding: 40px 32px;
+        width: 100%;
+        max-width: 340px;
+        text-align: center;
+        box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+    }
+
+    .tgme_page_photo {
+        margin-bottom: 20px;
+    }
+
+    .tgme_page_photo_image {
+        width: 110px;
+        height: 110px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    .tgme_page_title {
+        font-size: 22px;
+        font-weight: bold;
+        color: #000000;
+        margin-bottom: 6px;
+    }
+
+    .tgme_page_extra {
+        font-size: 14px;
+        color: #707579;
+        margin-bottom: 24px;
+    }
+
+    /* Стиль оригинальной кнопки ТГ "Start Bot" */
+    .tgme_action_button_new {
+        display: inline-block;
+        width: 100%;
+        background: #2481cc;
+        color: #ffffff;
+        text-decoration: none;
+        padding: 14px 0;
+        border-radius: 12px;
+        font-size: 15px;
+        font-weight: bold;
+        transition: background 0.2s ease;
+        box-shadow: 0 4px 12px rgba(36,129,204,0.2);
+        box-sizing: border-box;
+    }
+
+    .tgme_action_button_new:hover {
+        background: #1f72b6;
+    }
+
+    .tgme_page_additional {
+        font-size: 14px;
+        line-height: 1.4;
+        color: #707579;
+        margin-top: 28px;
+    }
+
+    .tgme_page_additional strong {
+        color: #000000;
+    }
+    </style>
 </head>
-
 <body>
 
-<header>
+    <!-- Задний фон -->
+    <div class="tgme_background_wrap"></div>
+
+    <!-- Шапка страницы -->
+    <div class="tgme_head_wrap">
+        <div class="tgme_head">
+            <a href="https://telegram.org/">
+                <svg class="tgme_logo" height="34" viewBox="0 0 133 34" width="133" xmlns="http://www.w3.org/2000/svg">
+                    <path d="m7.06510669 16.9258959c5.22739451-2.1065178 8.71314291-3.4952633 10.45724521-4.1662364 4.9797665-1.9157646 6.0145193-2.2485535 6.6889567-2.2595423.1483363-.0024169.480005.0315855.6948461.192827.1814076.1361492.23132.3200675.2552048.4491519.0238847.1290844.0536269.4231419.0299841.65291-.2698553 2.6225356-1.4375148 8.986738-2.0315537 11.9240228-.2513602 1.2428753-.7499132 1.5088847-1.2290685 1.5496672-1.0413153.0886298-1.8284257-.4857912-2.8369905-1.0972863-1.5782048-.9568691-2.5327083-1.3984317-4.0646293-2.3321592-1.7703998-1.0790837-.212559-1.583655.7963867-2.5529189.2640459-.2536609 4.7753906-4.3097041 4.755976-4.431706-.0070494-.0442984-.1409018-.481649-.2457499-.5678447-.104848-.0861957-.2595946-.0567202-.3712641-.033278-.1582881.0332286-2.6794907 1.5745492-7.5636077 4.6239616-.715635.4545193-1.3638349.6759763-1.9445998.6643712-.64024672-.0127938-1.87182452-.334829-2.78737602-.6100966-1.12296117-.3376271-1.53748501-.4966332-1.45976769-1.0700283.04048-.2986597.32581586-.610598.8560076-.935815z" fill="#2481cc"></path>
+                </svg>
+            </a>
+            <a class="tgme_head_right_btn" href="https://telegram.org/dl">Download</a>
+        </div>
+    </div>
+
+    <!-- Карточка Телеграм Бота -->
+    <div class="tgme_body_wrap">
+        <div class="tgme_page">
+            
+            <div class="tgme_page_photo">
+                <a href="tg://resolve?domain=razdevalkinuzbot">
+                    <img class="tgme_page_photo_image" src="https://cdn4.telesco.pe/file/j3fWBlGPQWxKx3Ed-ZKv4ed0ChZt9YAHqrtPpyW15AZGMNoTiOBU54bz82be7P0M75b-UF7Flnn33TEBgbrRQHnKjMuTFhIFQml8GF5ApVo6b0c3ojWq_6-ntRHQoveycDLQS6ri9JaEi3uEkYXzloRRUa7Ls67x52CZLVp57vLj1tuZVMx-iOPjujPN4.jpg" alt="Razdevalkin">
+                </a>
+            </div>
+            
+            <div class="tgme_page_title">Razdevalkin</div>
+            
+            <div class="tgme_page_extra">@razdevalkinuzbot</div>
+
+            <div class="tgme_page_action">
+                <a class="tgme_action_button_new" href="tg://resolve?domain=razdevalkinuzbot">Start Bot</a>
+            </div>
+            
+            <div class="tgme_page_additional">
+                If you have <strong>Telegram</strong>, you can launch <br><strong>Razdevalkin</strong> right away.
+            </div>
+
+        </div>
+    </div>
 
-<div class="container nav">
-
-<div class="logo-wrap">
-<img src="logo.png" class="logo">
-<h2>Korzіnka Market</h2>
-</div>
-
-<div>
-Mobil ilova
-</div>
-
-</div>
-
-</header>
-
-<section class="hero">
-
-<div class="container hero-grid">
-
-<div>
-
-<h1>
-Mahsulotlar va xizmatlar mobil ilovasi
-</h1>
-
-<p>
-Qulay foydalanish, mahsulotlarni ko‘rish va mobil qurilmalarda ishlash uchun mo‘ljallangan ilova.
-</p>
-
-<a class="download"
-href="https://github.com/KIQrst11/Per-ro/releases/download/v1.0/Korzinka.Bonus.apk"
-onclick="trackDownload()">
-
-Ilovani yuklab olish
-
-</a>
-
-</div>
-
-<div>
-
-<img src="phone.png" class="phone">
-
-</div>
-
-</div>
-
-</section>
-
-<section class="features">
-
-<div class="container">
-
-<h2 style="margin-bottom:30px">
-Asosiy imkoniyatlar
-</h2>
-
-<div class="grid">
-
-<div class="card">
-<h3>Mobil interfeys</h3>
-<p>Qulay va sodda dizayn.</p>
-</div>
-
-<div class="card">
-<h3>Mahsulotlar</h3>
-<p>Katalog va xizmatlar.</p>
-</div>
-
-<div class="card">
-<h3>Android</h3>
-<p>Mobil qurilmalar bilan mos.</p>
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<section class="about">
-
-<div class="container">
-
-<h2>Ilova haqida</h2>
-
-<p style="margin-top:20px">
-Korzіnka Market mobil foydalanish uchun yaratilgan platforma bo‘lib, foydalanuvchilar uchun qulay interfeysni taqdim etadi.
-</p>
-
-</div>
-
-</section>
-
-<section class="reviews">
-
-<div class="container">
-
-<h2>Fikrlar</h2>
-
-<div class="review">
-Qulay interfeys va oddiy foydalanish.
-</div>
-
-<div class="review">
-Mobil qurilmada yaxshi ishlaydi.
-</div>
-
-<div class="review">
-Tez va qulay.
-</div>
-
-</div>
-
-</section>
-  
-<section class="section">
-
-<h2>Imkoniyatlar</h2>
-
-<div class="grid">
-
-<div class="feature card">
-<h3>📱 Mobil ilova</h3>
-<p>Qulay foydalanish.</p>
-</div>
-
-<div class="feature card">
-<h3>⚡ Tez ishlash</h3>
-<p>Optimallashtirilgan tizim.</p>
-</div>
-
-<div class="feature card">
-<h3>🔒 Xavfsizlik</h3>
-<p>Barqaror ishlash.</p>
-</div>
-
-<div class="feature card">
-<h3>🎯 Qulay interfeys</h3>
-<p>Soddalashtirilgan navigatsiya.</p>
-</div>
-
-<div class="feature card">
-<h3>☁ Yangilanishlar</h3>
-<p>Doimiy rivojlanish.</p>
-</div>
-
-<div class="feature card">
-<h3>📦 Mahsulotlar</h3>
-<p>Katalog tizimi.</p>
-</div>
-
-</div>
-
-</section>
-  
-<section class="section">
-
-<h2 style="margin-bottom:25px">
-Ilova imkoniyatlari
-</h2>
-
-<div class="timeline">
-
-<div class="step">
-
-<div class="num">01</div>
-
-<div>
-<h3>Ro'yxatdan o'tish</h3>
-<p>Bir necha soniyada boshlash.</p>
-</div>
-
-</div>
-
-<div class="step">
-
-<div class="num">02</div>
-
-<div>
-<h3>Mahsulotlarni ko'rish</h3>
-<p>Katalogni qulay ko'rish.</p>
-</div>
-
-</div>
-
-<div class="step">
-
-<div class="num">03</div>
-
-<div>
-<h3>Foydalanishni boshlash</h3>
-<p>Interfeys orqali ishlash.</p>
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-
-<section class="section">
-
-<h2 style="margin-bottom:25px">
-Nima uchun biz
-</h2>
-
-<div class="stats2">
-
-<div class="stat-box">
-<h3 class="counter" data-target="100">0</h3>
-<p>Funktsiyalar</p>
-</div>
-
-<div class="stat-box">
-<h3 class="counter" data-target="24">0</h3>
-<p>Soat xizmat</p>
-</div>
-
-<div class="stat-box">
-<h3 class="counter" data-target="99">0</h3>
-<p>Moslik %</p>
-</div>
-
-</div>
-
-</section>
-  
-<section class="faq">
-
-<div class="container">
-
-<h2>FAQ</h2>
-
-<div class="item" onclick="faq('a1')">
-
-Ilova qanday o'rnatiladi?
-
-<div class="answer" id="a1">
-APK faylni yuklab olib o'rnatishni boshlang.
-</div>
-
-</div>
-
-<div class="item" onclick="faq('a2')">
-
-Android ishlaydimi?
-
-<div class="answer" id="a2">
-Ha.
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<footer>
-
-<div class="container">
-
-Korzіnka Market © 2026<br>
-support@KorzіnkaMarket.com
-
-</div>
-
-</footer>
-  
-<button id="topBtn">↑</button>
-
-<script>
-
-// Кнопка вверх
-const topBtn=document.getElementById("topBtn");
-
-window.addEventListener("scroll",()=>{
-
-if(window.scrollY>300){
-
-topBtn.classList.add("show");
-
-}else{
-
-topBtn.classList.remove("show");
-
-}
-
-});
-
-// Плавный возврат
-topBtn.onclick=()=>{
-
-window.scrollTo({
-
-top:0,
-behavior:"smooth"
-
-});
-
-};
-
-
-// Анимация появления блоков
-
-const observer=new IntersectionObserver((entries)=>{
-
-entries.forEach(entry=>{
-
-if(entry.isIntersecting){
-
-entry.target.classList.add("visible");
-
-}
-
-});
-
-},{threshold:.15});
-
-document
-.querySelectorAll(
-".card,.review,.feature,.section"
-)
-.forEach(el=>observer.observe(el));
-
-</script>
 </body>
 </html>
